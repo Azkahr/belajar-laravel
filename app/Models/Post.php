@@ -20,9 +20,9 @@ class Post extends Model {
     public function scopeFilter($query, array $filters){
     // cara baca, ketika search bernilai false jangan dijalankan, tapi jika bernilai true jalankan fungsi closure/sama saja seperti pengkondisian menggunakan if else
         $query->when($filters['search'] ?? false, function($query, $search) {
-            return $query->where(function($query) use($search){
+            return $query->where(function($query) use ($search) {
                 $query->where('title', 'like', '%' . $search . '%')
-                        ->orWhere('body', 'like', '%' . $search . '%');
+                        ->orWhere('body', 'like', '%' . $search . '%'); 
             });
         });
 
