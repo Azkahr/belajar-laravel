@@ -33,7 +33,7 @@
                   <td>
                       <a href="/posts/{{ $post->slug }}" class="badge bg-info"><span data-feather="eye"></span></a>
                       {{-- <a href="/dashboard/posts/{{ $post->slug }}/edit" class="badge bg-warning"><span data-feather="edit"></span></a> --}}
-                      <form action="/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
+                      <form action="/dashboard/admin/{{ $post->slug }}" method="post" class="d-inline">
                         @method('DELETE')
                         @csrf
                         <button class="badge bg-danger border-0" onclick="return confirm('Are you sure?')"><span data-feather="x-circle"></span></button>
