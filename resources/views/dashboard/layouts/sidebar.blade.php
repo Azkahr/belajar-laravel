@@ -26,6 +26,12 @@
               Post Categories
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link {{ Request::is('dashboard/admin*') ? 'active' : '' }}" href="/dashboard/admin">
+            <span data-feather="filter"></span>
+              Posts
+          </a>
+        </li>
       </ul>
       @endcan
 

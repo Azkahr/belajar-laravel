@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminPostController;
 use App\Models\Category; 
 use App\Models\Post; 
@@ -80,3 +81,5 @@ Route::resource('/dashboard/categories', AdminPostController::class)->except('sh
 // walaupun routenya sama tapi tergantung methodnya di viewnya
 Route::resource('/dashboard/categories', AdminPostController::class)->middleware('admin');
 Route::resource('/dashboard/categories', AdminPostController::class)->middleware('admin');
+
+Route::resource('/dashboard/admin', AdminController::class)->middleware('admin');
