@@ -78,7 +78,7 @@ Route::resource('/dashboard/posts', DashboardPostController::class)->middleware(
 
 Route::resource('/dashboard/categories', AdminPostController::class)->except('show')->middleware('admin');
 
-// walaupun routenya sama tapi tergantung methodnya di viewnya
+// walaupun routenya sama tapi tergantung method di viewnya
 Route::resource('/dashboard/categories', AdminPostController::class)->middleware('admin');
 Route::resource('/dashboard/categories', AdminPostController::class)->middleware('admin');
 
