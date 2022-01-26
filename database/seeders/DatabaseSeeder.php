@@ -17,37 +17,47 @@ class DatabaseSeeder extends Seeder
      */
     public function run(){
  
-        User::create([
-            'name' => 'Azka Hanifassalam Rabbani',
-            'username' => 'azka',
-            'email' => 'azkahar@gmail.com',
-            'password' => bcrypt('password'),
-        ]);
-        
         // User::create([
-        //     'name' => 'Jerome Irwanto',
-        //     'email' => 'jerome@gmail.com',
-        //     'password' => bcrypt('12345'),
+        //     'name' => 'Azka Hanifassalam Rabbani',
+        //     'username' => 'azka',
+        //     'email' => 'azkahar@gmail.com',
+        //     'password' => bcrypt('password'),
+        // ]);
+        
+        // // User::create([
+        // //     'name' => 'Jerome Irwanto',
+        // //     'email' => 'jerome@gmail.com',
+        // //     'password' => bcrypt('12345'),
+        // // ]);
+
+        // User::factory(3)->create();
+
+        // Category::create([
+        //     'name' => 'Web programming',
+        //     'slug' => 'web-programming',
         // ]);
 
-        User::factory(3)->create();
+        // Category::create([
+        //     'name' => 'Web Design',
+        //     'slug' => 'web-design',
+        // ]);
 
-        Category::create([
-            'name' => 'Web programming',
-            'slug' => 'web-programming',
-        ]);
+        // Category::create([
+        //     'name' => 'Personal',
+        //     'slug' => 'personal',
+        // ]);
 
-        Category::create([
-            'name' => 'Web Design',
-            'slug' => 'web-design',
-        ]);
+        // Category::create([
+        //     'name' => 'Photograpy',
+        //     'slug' => 'photograpy'
+        // ]);
 
-        Category::create([
-            'name' => 'Personal',
-            'slug' => 'personal',
-        ]);
+        // Category::create([
+        //     'name' => 'Car',
+        //     'slug' => 'car'
+        // ]);
 
-        Post::factory(20)->create();
+        Post::factory(5)->create();
 
         // Post::create([
         //     'title' => 'Judul Pertama',

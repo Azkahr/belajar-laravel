@@ -55,7 +55,9 @@ class AdminPostController extends Controller
      */
     public function show(Category $category)
     {
-        return view('dashboard.categories.index');
+        return view('dashboard.categories.index', [
+            'category' => $category
+        ]);
     }
 
     /**
